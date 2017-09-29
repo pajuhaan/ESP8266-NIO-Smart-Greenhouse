@@ -15,9 +15,8 @@ Implement web socket server in an ESP8266. Command send from NIO to ESP in the J
 Parse Json:
 ```javascript
 JsonObject &root = jsonBuffer.parseObject(payload);
-int led  = root["led"];
-int m1   = root["m1"];
-int m2   = root["m2"];
+bool led_mod          = root["led"];
+bool water_mode    = root["water"];
 ```
 
 ### NIO Back Panel:
