@@ -130,7 +130,7 @@ void setup() {
 
 
 
-  WiFiMulti.addAP("HODAK", "1442514425");
+  WiFiMulti.addAP("SSID", "PASSWORD");
 
   while (WiFiMulti.run() != WL_CONNECTED) {
     delay(100);
